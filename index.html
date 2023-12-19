@@ -4,15 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title</title>
+  <title>Notes App</title>
   <link rel="stylesheet" href="styles/globals.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap"
     rel="stylesheet">
-  <script src="/scripts/script.js" defer></script>
+    
+  <script src="https://kit.fontawesome.com/0bd7a31c15.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/10.0.0/marked.min.js" integrity="sha512-EjCqglelq9tO9KdT2iRYtcj19Q8sSXblMy+5SBfogeh5TvLwmRh9dz5l1uEwNO40/cZInZsr3jti2JCNMZJsng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="/scripts/script.js" defer></script> -->
 </head>
-<body>
-  <h1>This is a draft</h1>
+<body class="page">
+  <main class="main">
+    <section class="main__inner">
+      <form class="search-form" action="/search" method="GET">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input class="search-form__input" type="text" id="searchInput" name="search" placeholder="Search note" required>
+      </form>
+      <article class='notes'>
+        <div class="notes__title">
+          Notes
+        </div>
+        <div class="notes__list">
+          <div class="notes__list-item">
+            <h2 class="notes__list-item-title">
+              School notes
+            </h2>
+          </div>
+          <div class="notes__list-item-button">
+            <button class="add-note"> <i class="fa-solid fa-plus"></i></button>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer class="footer">
+      <p class="footer__text">
+        Note App Project, December 2023
+        <br>
+        The design template was taken from <a href="https://uizard.io/templates/tablet-templates/notes-tablet-app/">here</a>.
+        <br>
+        Developed by Daniil Khromov.
+      </p>
+    </footer>
+  </main>
 </body>

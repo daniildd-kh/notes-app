@@ -1,4 +1,145 @@
-body{
+
+
+.page{
   font-family: "Montserrat", sans-serif;
   font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(#5a5473, #3b3559);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main{
+  background-color: #261f47;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border: 1px solid #645f7b;
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 40px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+.main__inner{
+  min-height: 100vh;
+}
+
+.search-form{
+  position: relative;
+}
+
+.search-form__input{
+  background-color: #514983;
+  padding: 10px 100px 10px 30px;
+  display: flex;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 14px;
+  outline: none;
+}
+.search-form__input::placeholder{
+  color: #fff;
+  font-size: 14px;
+}
+.search-icon {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px; 
+}
+
+.notes{
+  margin-top: 30px;
+}
+.notes__title{
+  font-size: 16px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  padding: 4px 8px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.notes__list{
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+
+}
+
+.notes__list-item{
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #dabbfa;
+  color: #000;
+  font-size: 10px;
+  letter-spacing: 0.05rem;
+}
+.notes__list-item-button{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.add-note{
+  background-color: #ea3757;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.footer{
+  margin-top: auto;
+}
+
+
+.footer__text{
+  color: #fff;
+  border-top: 1px solid #fff;
+  
+}
+
+/*  */
+
+.notes__tools{
+  background-color: #8fb3ff;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.tool{
+  color: #ff8f94;
+  font-size: 1rem;
+}
+
+.notes__content{
+  width: 100%;
+  height: 100%;
+}
+
+textarea{
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.hidden-element{
+  display: none;
 }
